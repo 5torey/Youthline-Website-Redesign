@@ -1,0 +1,25 @@
+.hero-container{
+    display: flex;
+
+}
+
+.hero-text{
+ width: 50vw;
+}
+
+.hero-image{
+width: 50vw;
+}
+
+@media screen and (max-width: 800px){
+    .hero-container{
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-width: 800px){
+    .hero-container{
+        flex-direction: row;
+    }
+}
+

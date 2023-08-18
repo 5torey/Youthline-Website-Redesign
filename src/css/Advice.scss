@@ -1,0 +1,48 @@
+// Imports
+@import '_colours';
+@import '_fonts';
+
+#postimg{ 
+        width: 200px;
+        height: 200px;
+        justify-self: center;
+}
+
+ul {
+list-style-type: none !important;
+}
+
+#adviceTitle {
+    font-family: $heading;
+    font-size: 40px;
+    color: $black;
+}
+
+.advice-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 197px;
+    border-bottom: dotted 1px $black;
+}
+
+.advice-sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.advice-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white !important;
+    border: solid $green !important;
+    border-radius: 30px !important;
+    height: 440px;
+    width: 230px;
+}
+
+
+@media screen and (max-width: 800px){}
+@media screen and (min-width: 800px){}

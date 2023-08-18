@@ -1,0 +1,53 @@
+// Imports
+@import 'colours';
+@import '_fonts';
+
+// Cart Icon
+.fa-cart-shopping {
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+// Icon Containers
+#nav-btn-container, #cart-container {
+    margin: 20px;
+}
+
+// Nav Donate Button
+#navdonate {
+    background-color: $black;
+    text-align: center;
+    border-radius: 25px;
+    color: $white;
+    height: 50px;
+    width: 125px;
+    a {
+        color: $white;
+        font-weight: 300;
+        font-family: $body;
+        height: 20px;
+        margin: none !important;
+        letter-spacing: none !important;
+    } 
+    p {
+        font-size: 20px;
+        color: $white;
+    }
+}
+
+#navlogo {
+    margin-left: 30px;
+}
+
+
+
+@media screen and (max-width: 800px){
+    #navdonate {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 800px){
+    
+}

@@ -41,13 +41,20 @@ const Advice = () => {
     const mappedPosts = posts.map((post, index) => {
       return (
         <div key={post.slug + "-" + index} className="post-container">
-          <h4 className="title">{post.title.rendered}</h4>
-         
-         <img src={getFeaturedImage(post)} alt="" />
+        {/* Card 1 */}  
+        <div className="advice-card">
+        <div className="service-img-1">
+        <img src={getFeaturedImage(post)} alt="" id='postimg'/>
+        </div>
+        <h4 className="title">{post.title.rendered}</h4>
+        <ul>
           <li key={post.slug + "-" + index}>
             {/* <a href={`#/post/${post.id}`}>Read More...</a> */}
             <p dangerouslySetInnerHTML={{__html: post.content.rendered}}></p>
           </li>
+          </ul>
+        </div>
+
         </div>
       )
     })
@@ -62,8 +69,8 @@ const Advice = () => {
 
   return (
     <div className="advice-container">
-    <h2 className='title'>Advice | Kupu Āwhina</h2>
-    <div className="post-container">
+    <h2 id='adviceTitle' className='advice-title'>Advice | Kupu Āwhina</h2>
+    <div className="advice-sub-container">
     {!loading && <Posts/>}
     </div>
     </div>

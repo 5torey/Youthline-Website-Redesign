@@ -1,0 +1,17 @@
+// Imports
+@import '_colours';
+@import '_fonts';
+
+.contact-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: dotted 1px $black;
+}
+
+#contactTitle {
+    color: $black;
+}
+
+@media screen and (max-width: 800px){}
+@media screen and (min-width: 800px){}

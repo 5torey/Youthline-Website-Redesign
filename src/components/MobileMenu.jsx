@@ -23,8 +23,15 @@ const MobileMenu = ({ closeMethod }) => {
                     <Link to="/about" onClick={closeMethod}>About Us</Link>
                 </li>
                 <li>
+                    <Link to="/store" onClick={closeMethod}>Store</Link>
+                </li>
+                <li>
+                    <Link to="/store" onClick={closeMethod}>Donate</Link>
+                </li>
+                <li>
                     <Link to="/advice" onClick={closeMethod}>Advice</Link>
                 </li>
+
             </ul>
         </>
     )

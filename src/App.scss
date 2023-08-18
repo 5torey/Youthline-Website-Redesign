@@ -1,20 +1,6 @@
-/* Font Imports */
-/* Space Grotesk */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-/* CSS Rules */
-/* font-family: 'Space Grotesk', sans-serif; */
-/* Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* CSS Rules */
-/* font-family: 'Inter', sans-serif; */
-
-/* Style Guide */
-
-/* Black -  #080009 */
-/* Purple - #B67EFF */
-/* White - #FFF9E9 */
-/* Green -  #006C4A */
-
+// Imports
+@import './css/colours';
+@import './css/fonts';
 
 * {
   margin: 0;
@@ -29,13 +15,13 @@ html {
   height: 100%;
 }
 
-body {
-  height: 100vh;
+:root {
+  height: fit-content;
   margin: 0px;
   padding: 0px;
   background: linear-gradient(0deg, rgba(182,126,255,1) 35%, rgba(255,249,233,1) 100%);
   background-repeat: no-repeat;
-  overflow: hidden;
+  
 }
 
 body.no-scroll {
@@ -44,10 +30,9 @@ body.no-scroll {
 
 .wrapper{
   width: 100vw;
-  height: 80vh;
-
   overflow-y: scroll;
 }
+
 
 label {
   display: block;
@@ -58,25 +43,23 @@ a {
 }
 
 /* Headings */
-h1 {
-  font-size: 40px;
-}
 
-h2 {
-  color: #080009;
-  margin-bottom: 20px;
-  font-weight: 100;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 40px;
-}
 
-h3 {
-  font-size: 36.5px;
-}
 
-h4 {
-  font-size: 31.5px;
-}
+// h3 {
+//   font-size: 36.5px;
+//   font-family: $body;
+//   font-weight: 300;
+//   color: $green;
+// }
+
+// h4 {
+//   font-size: 31.5px;
+//   font-family: $body;
+//   font-weight: bold;
+//   color: $purple;
+
+// }
 
 h5 {
   font-size: 22.5px;
@@ -98,18 +81,42 @@ h5 {
   display: flex;
   align-items: center;
   padding: 20px;
+  height: 10vh;
 }
 
-#topnav a {
-  color: #080009;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 18px;
-  margin-top: 50px;
-  display: inline-block;
-  font-family: 'Space-Grotesk', sans-serif;
-  font-weight: bold;
-} 
+// #topnav a {
+//   color: #080009;
+//   text-decoration: none;
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+//   margin-left: 20px;
+//   margin-right: 20px;
+//   font-size: 20px;
+//   display: inline-block;
+//   font-family: 'Space-Grotesk', sans-serif;
+//   font-weight: 500;
+//   padding-right: 10px;
+//   padding-left: 10px;
+//   letter-spacing: .1em;
+// } 
+
+ul {
+  a {
+    color: #080009;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Space-Grotesk', sans-serif;
+    font-weight: 500;
+    padding-right: 10px;
+    padding-left: 10px;
+    letter-spacing: .1em;
+  } 
+}
 
 #navlogo {
   width: 200px;
@@ -174,21 +181,14 @@ button:hover {
 
 #menu {
   display: none;
+  
 }
 
 #menu-container {
   width: 100%;
 }
 
-#topnav a:hover {
-  color: #8797e5;
-}
-
 #menu a:hover {
-  color: #080009;
-}
-
-#donatebtn {
   color: #080009;
 }
 
@@ -210,12 +210,14 @@ button:hover {
 
 /* Media queries */
 @media screen and (min-width: 780px) {
-  h1 {
-    font-size: 60px;
-  }
+  // h1 {
+  //   font-size: 60px;
+  // }
   #menu {
-    display: block;
+    display: flex;
     width: 75%;
+    justify-content: center;
+    align-items: center;
   }
   #menu li {
     display: inline-block;

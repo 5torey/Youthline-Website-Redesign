@@ -1,0 +1,106 @@
+// Imports
+@import '_colours';
+@import '_fonts';
+
+.services-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 197px;
+    border-bottom: dotted 1px $black;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    padding-bottom: 70px;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    border: solid $green;
+    border-radius: 30px;
+    margin-right: 93px;
+    margin-left: 93px;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 440px;
+    width: 230px;
+}
+
+.services-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service-container {
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 50vw;
+}
+
+#serviceimg {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+}
+
+h3 {
+    color: $black;
+    margin-bottom: 50px;
+    font-weight: 100;
+    font-family: $heading;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h4 {
+    font-size: 31.5px;
+    font-family: $body;
+    font-weight: bold;
+    color: $purple;
+    margin-bottom: 40px;
+}
+
+p {
+    font-family: $body;
+    font-size: 20px;
+    color: $black;
+}
+
+#ct3 {
+    font-family: $body;
+    color: $black;
+    padding-bottom: 10px;
+}
+
+#ct2 {
+    color: $purple;
+    font-family: $heading;
+    font-size: 22.5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#ct4 {
+    font-family: $heading;
+    font-size: 22.5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: $green;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 800px){}
+@media screen and (min-width: 800px){}
+

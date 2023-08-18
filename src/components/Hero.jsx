@@ -2,19 +2,23 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import HeroImage from '../../public/1.png'
-import '../css/Hero.css'
+import '../css/Hero.scss'
 
 
 const Hero = () => {
   return (
     <div className='hero-container'>
         <div className="hero-text">
-            <h2>You can make a difference</h2>
-            <h3>Donate now to provide life-changing support to rangatahi in need</h3>
-            <Link to='/store'><h4 id='hero-donate'>Donate</h4></Link>
+          <div className="heading-container">
+            <h1 id='hero-heading'>You can make a difference</h1>
+            </div>
+            <h2>Donate now to provide life-changing support to rangatahi in need</h2>
+            <div className="hero-donate-btn">
+            <button id='hero-donate'><Link to='/store'><p>Donate</p></Link></button>
+            </div>
         </div>
         <div className="hero-image">
-            <img src={HeroImage} alt="Friend symbolically comforting sad friend through a phone" />
+            <img src={HeroImage} id='hero-image' alt="Friend symbolically comforting sad friend through a phone" />
         </div>
     </div>
   )

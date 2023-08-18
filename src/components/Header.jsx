@@ -38,13 +38,13 @@ const Header = () => {
           <li>
             <Link to="/store">Store</Link>
           </li>
-          <li id='donatebtn'>
-            <Link to="/store">Donate</Link>
-          </li>
-          <li>
-            <CartFill/>
-          </li>
         </ul>
+        <div id="nav-btn-container">
+          <button id='navdonate'><Link to="/store"><p>Donate</p></Link></button>
+          </div>
+          <div id='cart-container'>
+          <i className="fa-solid fa-cart-shopping"></i>
+          </div>
         {/* Hamburger icon, only shows up on small screens. */}
         <div id="menu-container">
           <button id="menu-button" className='show-mobile-menu-button' onClick={toggleMobileMenu}>

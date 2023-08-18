@@ -16,7 +16,6 @@ const Footer = () => {
       <p>Contact Us</p>
       <p>About Us</p>
       <p>Store</p>
-      <p>Test</p>
       </div>
       <div className="logo-container">
       <img src={Logo} alt="Youthline Logo" />

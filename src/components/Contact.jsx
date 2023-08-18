@@ -136,8 +136,9 @@ const ContactForm = () => {
 const Contact = () => {
 
   return (
+    
     <div className="contact-main-container">
-      <h2 id='contactTitle'>Contact Us | Whakapā Mai</h2>
+      <h3>Contact Us | Whakapā Mai</h3>
       <div className="contact-blobs-container">
       <div className="contact-blob">
       <FontAwesomeIcon icon={faSquarePhone} />

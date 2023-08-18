@@ -12,9 +12,9 @@ const Hero = () => {
           <div className="heading-container">
             <h1 id='hero-heading'>You can make a difference</h1>
             </div>
-            <h2>Donate now to provide life-changing support to rangatahi in need</h2>
+            <h2 id='hero-sub'>Donate now to provide life-changing support to rangatahi in need</h2>
             <div className="hero-donate-btn">
-            <button id='hero-donate'><Link to='/store'><p>Donate</p></Link></button>
+            <button id='hero-donate'><Link to='/store'><p id='donate2'>Donate</p></Link></button>
             </div>
         </div>
         <div className="hero-image">

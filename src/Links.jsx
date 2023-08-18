@@ -4,7 +4,7 @@ import { Routes, Route} from 'react-router-dom'
 
 // Import Pages
 import Home from './pages/Home'
-import Store from './pages/store/Store'
+import Store from './pages/Store/Store'
 import Donation from './pages/Store/Product'
 
 // Import Components 
@@ -23,7 +23,7 @@ const Links = () => {
     {/* Home */}
       <Route exact path="/" element={<Home />} />
       {/* Pages */}
-      <Route path="/store/" element={<Store />} />
+      <Route path="/store" element={<Store />} />
       <Route path="/product/:id" element={<Product />} />
       {/* Components */}
       <Route path="/post/:id" element={<Post />}/>

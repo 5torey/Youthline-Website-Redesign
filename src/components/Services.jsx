@@ -44,13 +44,13 @@ const Services = () => {
         <div className="services-text-container">
           {/* Counselling Cont */}
             <div className="service-container">
-              <h4>Counselling | Tohutohu</h4>
+              <h4 id='ct5'>Counselling | Tohutohu</h4>
               <h5 id='ct4'>It's normal to worry about asking for help, but we are here to listen and help you figure out what is right for you.</h5>
               <p>Our counselling services are free and confidential. They are available for free via call, txt, webchat or email. </p>
             </div>
             {/* Service Cont */}
             <div className="service-container">
-            <h4>Mentoring | Kaiārahi</h4>
+            <h4 id='ct5'>Mentoring | Kaiārahi</h4>
             <h5 id='ct4'>Mentoring is a one-on-one relationship, usually with a youth worker, who will work with you to plan and achieve your goals.</h5>
             <p>A mentor can help you set education goals, create a CV, develop skills to find a job, and build your confidence socially and professionally. Contact Youthline if mentoring sounds right for you.</p>
             </div>

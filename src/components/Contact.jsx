@@ -3,6 +3,7 @@ import axios from 'axios'
 import Image9 from '../../public/9.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSquarePhone, faComments, faMobileScreenButton, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import '../css/Contact.scss'
 
 // Form Endpoint
 const formEndpoint = import.meta.env.VITE_APP_WP_API_FORM_ENDPOINT;
@@ -69,7 +70,8 @@ const ContactForm = () => {
             method="POST"
         >
           {/* First Name */}
-            <div>
+            <div className='row' id='nameInput'>
+              <div>
                 <label htmlFor="firstName">First Name</label>
                 <input
                     type="text"
@@ -78,9 +80,9 @@ const ContactForm = () => {
                     value={firstName}
                     required
                 />
-            </div>
-            {/* Last Name */}
-            <div>
+                </div>
+                {/* Last Name */}
+                <div>
                 <label htmlFor="lastName">Last Name</label>
                 <input
                     type="text"
@@ -90,10 +92,11 @@ const ContactForm = () => {
                     required
                 />
             </div>
+            </div>
             {/* Email */}
-            <div>
+            <div id='cf1'>
                 <label htmlFor="email">Email</label>
-                <input
+                <input id='email'
                     type="email"
                     name="email"
                     onChange={event => setEmail(event.target.value)}
@@ -102,9 +105,9 @@ const ContactForm = () => {
                 />
             </div>
             {/* Subject */}
-            <div>
+            <div id='cf2'>
                 <label htmlFor="subject">Subject</label>
-                <input
+                <input id='subject'
                     type="text"
                     name="subject"
                     onChange={(event) => setSubject(event.target.value)}
@@ -113,9 +116,9 @@ const ContactForm = () => {
                 />
             </div>
             {/* Message */}
-            <div>
+            <div id='cf3'>
                 <label htmlFor="message">Message</label>
-                <textarea
+                <textarea id='message'
                     name="message"
                     onChange={event => setMessage(event.target.value)}
                     value={message}
@@ -124,8 +127,8 @@ const ContactForm = () => {
             </div>
             {/* Submit Button */}
             <div>
-                <button className="submit-button" type="submit">
-                    Send a message
+                <button id='submit-button' className="submit-button" type="submit">
+                    Submit
                 </button> 
             </div>
         </form>
@@ -159,10 +162,10 @@ const Contact = () => {
       </div>
       <div className="contact-form-container">
         <div className="contact-form-text">
-          <h4>A Guiding Light</h4>
-          <h5>Mentors can change your life for the better.</h5>
-          <p>Fill out the form to request mentoring.</p>
-          <img src={Image9} alt="Girl crying wearing a checkered dress, being comforted by ambigoudly gendered person" />
+          <h4 id='ft1'>A Guiding Light</h4>
+          <h5 id='ft2'>Mentors can change your life for the better.</h5>
+          <p id='ft3'>Fill out the form to request mentoring.</p>
+          <img id='cfimg' src={Image9} alt="Girl crying wearing a checkered dress, being comforted by ambigoudly gendered person" />
         </div>
         <div className="contact-form">
           <ContactForm/>

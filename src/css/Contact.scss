@@ -6,9 +6,120 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-bottom: dotted 1px $black;
-    padding: 100px 197px;
+    padding: 100px;
 }
+
+.contact-blobs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-blob {
+    display: flex;
+    background: $white;
+    border: solid $green;
+    width: 270px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: $body;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 25px;
+    gap: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    background: $white;
+    border: solid $green;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 50px 65px;
+    width: 1000px;
+    height: auto;
+    justify-content: space-between;
+    gap: 40px;
+} 
+
+.contact-form-text {
+    padding: 10px;
+}
+
+#cfimg {
+    width: 400px;
+    height: 400px;
+}
+
+// Contact form 
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    font-family: $heading; 
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    input {
+        border: solid $green 2px;
+        border-radius: 25px;
+        width: 225px;
+        height: 50px;
+        background: rgba(182, 126, 255, 0.20);
+        padding: 2px;
+    } 
+    input:focus {
+            outline: none;
+    }
+    label {
+        padding-bottom: 25px;
+    }
+    textarea {
+        border: solid $green 2px;
+        border-radius: 25px;
+        height: 50px;
+        background: rgba(182, 126, 255, 0.20);
+        padding: 2px;
+    }
+    textarea:focus {
+        outline: none;
+}
+} 
+
+#nameInput {
+    display: flex;
+    gap: 40px;
+} 
+
+#email, #subject, #message {
+    width: 500px;
+}
+
+#cf1, #cf2, #cf3 {
+    padding: 10px 0px 10px 0px;
+}
+
+// Button 
+
+#submit-button {
+    background: $green !important;
+    color: $white;
+    border: solid $black 1px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-family: $body;
+    font-size: 20px;
+    align-items: center;
+}
+
+// Heading / text
 
 h3 {
     color: $black;
@@ -22,10 +133,21 @@ h3 {
     text-align: center;
 }
 
-.contact-blob {
-    background: $white;
-    border: solid $green 2px;
+#ft1 {
+    color: $black;
+    font-family: $heading;
+    font-size: 31px;
+    margin-bottom: 20px;
 }
+
+#ft2 {
+    color: $green;
+    font-family: $body;
+    font-size: 22.5px;
+    margin-bottom: 20px;
+}
+
+// media queries 
 
 @media screen and (max-width: 800px){}
 @media screen and (min-width: 800px){}

@@ -96,3 +96,25 @@
     width: 150px;
 
 }
+
+@media screen and (max-width: 800px){
+   .footer-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+
+   .newsletter-input {
+    width: 330px;
+   }
+
+   #footmenu {
+    flex-direction: column;
+   }
+
+}
+@media screen and (min-width: 800px){
+    
+}

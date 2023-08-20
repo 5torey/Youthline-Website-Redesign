@@ -1,0 +1,74 @@
+// Imports
+@import '_colours';
+@import '_fonts';
+
+
+
+#sptitle {
+    display: flex;
+    font-family: $heading;
+    font-size: 31.5px;
+    color: $black;
+    text-align: left;
+    justify-content: start;
+}
+
+#spprice {
+    display: flex;
+    font-family: $body;
+    font-size: 25px;
+    color: $black;
+    font-weight: 300;
+}
+
+
+.single-product-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    justify-content: space-evenly;
+    border-bottom: dotted $black 2px;
+}
+
+
+
+#spd, #spprice {
+    padding-bottom: 50px;
+}
+
+#atc {
+    background: $green !important;
+    color: $white;
+    border: solid $black 1px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-family: $body;
+    font-size: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 800px){
+    .single-product-container, .product-description, #sptitle, #spprice, #spd {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+    }
+
+    .single-product-container {
+        padding-bottom: 150px;
+    }
+
+    #atc {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 800px){}

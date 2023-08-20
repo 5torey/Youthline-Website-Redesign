@@ -2,6 +2,7 @@ import { useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import {Helmet} from 'react-helmet'
+import '../../css/Product.scss'
 
 // Product page
 const productsURL = import.meta.env.VITE_WC_PRODUCTS_URL;
@@ -50,12 +51,12 @@ const Product = (props) => {
       <div className="single-product-container">
         <div className="product-description">
         {/* Product Name */}
-        <h3 className='title'>{product.name}</h3>
-        <p dangerouslySetInnerHTML={{ __html: product.description }}></p>
+        <h3 id='sptitle' className='title'>{product.name}</h3>
+        <p id='spd' dangerouslySetInnerHTML={{ __html: product.description }}></p>
         {/* Product Price */}
-        <h5>${product.prices.price/100}</h5>
+        <h5 id='spprice'>${product.prices.price/100}</h5>
         {/* Add to Cart BTN */}
-        <button>Add To Cart</button>
+        <button id='atc'>Add To Cart</button>
         </div>
         {/* Product Image */}
         <div className="product-image">

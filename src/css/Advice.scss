@@ -55,6 +55,9 @@ list-style-type: none !important;
     
     .advice-sub-container {
         flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        width: 371px;
     }
 }
 @media screen and (min-width: 800px){}

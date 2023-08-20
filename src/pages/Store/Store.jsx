@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
+import '../../css/Store.scss';
 
 const Store = () => {
 
@@ -64,13 +64,13 @@ const Store = () => {
           {/* Product Container */}
           <div className="product-container">
           {/* Product Image */}
-          <div className="product-image">
+          {/* <div className="product-image"> */}
             <img src={getFeaturedImage(product)} alt="Product Image" />
-          </div>
+          {/* </div> */}
           {/* Detail Container */}
           <div className="details-container">
-          <h4 className="name">{product.name}</h4>
-          <h3 className="name">${product.prices.price/100} {product.prices.currency_code}</h3>
+          <h4 id='prodname'className="name">{product.name}</h4>
+          <h3 id='prodprice'className="name">${product.prices.price/100} {product.prices.currency_code}</h3>
           </div>
           {/* End of Product Container */}
           </div>
@@ -88,20 +88,21 @@ const Store = () => {
     
       <div className='store-container'>
         <div className="title-container">
-          <h2>Youthline Store | Toa Raina Rangatahi </h2>
+          <h2 id='storetitle'>Youthline Store | Toa Raina Rangatahi </h2>
         </div>
         {!loading && 
         <>   
         <div className='donation-container'>
         <div className="title-container">
-        <h3>Donate | Koha</h3>
+        <h3 id='subtitle'>Donate | Koha</h3>
         </div>
                 {loading ? null : <Products products={donations}/>}
           </div>
                  <div className="merchandise-container">
                   <div className="title-container">
-                    <h3>Merchandise | Hoko</h3>
+                    <h3 id='subtitle'>Merchandise | Hoko</h3>
                     </div>
+                    
                  {loading ? null : <Products products={products}/>}
                  </div>
                  </>

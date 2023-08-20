@@ -43,7 +43,7 @@ const Header = () => {
           <button id='navdonate'><Link to="/store"><p>Donate</p></Link></button>
           </div>
           <div id='cart-container'>
-          <i className="fa-solid fa-cart-shopping"></i>
+          <i className="fa-solid fa-cart-shopping" id='cart'></i>
           </div>
         {/* Hamburger icon, only shows up on small screens. */}
         <div id="menu-container">

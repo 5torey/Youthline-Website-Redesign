@@ -74,6 +74,9 @@ a {
 
 #menu-button {
   float: right;
+  border: none;
+  background: none;
+  display: block;
 }
 
 #topnav {
@@ -173,7 +176,10 @@ button:hover {
   right: 10px;
   font-size: 53px;
   color: white;
+  background-color: transparent;
+  border: none;
 }
+
 
 #close-nav-menu:hover {
   color: #080009;
@@ -271,6 +277,7 @@ button:hover {
     overflow-x: hidden;
     flex-direction: column;
   }
-
-
+  #cart {
+    display: none;
+  }
 }

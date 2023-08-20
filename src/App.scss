@@ -42,68 +42,12 @@ a {
   text-decoration: none;
 }
 
-/* Headings */
-
-
-
-// h3 {
-//   font-size: 36.5px;
-//   font-family: $body;
-//   font-weight: 300;
-//   color: $green;
-// }
-
-// h4 {
-//   font-size: 31.5px;
-//   font-family: $body;
-//   font-weight: bold;
-//   color: $purple;
-
-// }
-
-// h5 {
-//   font-size: 22.5px;
-// }
 
 /* nav */
 
 #menu {
   width: 75%;
   padding-right: 30px;
-}
-
-#menu-button {
-  float: right;
-  border: none;
-  background: none;
-  display: block;
-}
-
-#topnav {
-  background: transparent;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  height: 10vh;
-}
-
-// #topnav a {
-//   color: #080009;
-//   text-decoration: none;
-//   margin-top: 20px;
-//   margin-bottom: 20px;
-//   margin-left: 20px;
-//   margin-right: 20px;
-//   font-size: 20px;
-//   display: inline-block;
-//   font-family: 'Space-Grotesk', sans-serif;
-//   font-weight: 500;
-//   padding-right: 10px;
-//   padding-left: 10px;
-//   letter-spacing: .1em;
-// } 
-
-ul {
   a {
     color: #080009;
     text-decoration: none;
@@ -121,6 +65,39 @@ ul {
   } 
 }
 
+#menu-button {
+  float: right;
+  border: none;
+  background: none;
+  display: block;
+}
+
+#topnav {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 10vh;
+}
+
+// ul {
+//   a {
+//     color: #080009;
+//     text-decoration: none;
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+//     margin-left: 20px;
+//     margin-right: 20px;
+//     font-size: 20px;
+//     display: inline-block;
+//     font-family: 'Space-Grotesk', sans-serif;
+//     font-weight: 500;
+//     padding-right: 10px;
+//     padding-left: 10px;
+//     letter-spacing: .1em;
+//   } 
+// }
+
 #navlogo {
   width: 200px;
   height: 150px;
@@ -130,12 +107,6 @@ ul {
   width: 50%;
 }
 
-/* buttons */
-// button {
-//   background: none;
-//   border: none;
-//   display: block;
-// }
 
 button:hover {
   cursor: pointer;

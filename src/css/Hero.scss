@@ -102,10 +102,14 @@ h1 {
         align-items: center;
         text-align: center;
         justify-content: center;
-        padding: none !important;
+        padding: 0px !important;
         h1 {
             text-align: center;
             align-items: center;
+        }
+        #hero-image {
+            width: 300px;
+            height: 300px;
         }
     }
 

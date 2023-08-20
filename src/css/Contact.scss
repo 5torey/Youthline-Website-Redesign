@@ -117,6 +117,7 @@
     font-family: $body;
     font-size: 20px;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 // Heading / text
@@ -156,14 +157,20 @@ h3 {
         text-align: center;
         justify-content: center;
         width: 100%;
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     } 
 
-    .contact-main-container, {
-        padding: 0px ;
+    .contact-form-container {
+        margin-bottom: 20px;
     }
 
-    .contact-form-container {
-        padding: 0px;
+    #cfimg {
+        width: 300px;
+        height: 300px;
     }
 
     .contact-blobs-container {
@@ -177,11 +184,11 @@ h3 {
         flex-direction: column;
         font-family: $heading; 
         font-size: 20px;
-        padding: 10px 10px 10px 10px;
+        // padding: 10px 10px 10px 10px;
         input {
             border: solid $green 2px;
             border-radius: 25px;
-            width: 225px;
+            width: auto;
             height: 50px;
             background: rgba(182, 126, 255, 0.20);
             padding: 2px;
@@ -195,6 +202,7 @@ h3 {
         textarea {
             border: solid $green 2px;
             border-radius: 25px;
+            width: auto;
             height: 50px;
             background: rgba(182, 126, 255, 0.20);
             padding: 2px;
@@ -203,5 +211,10 @@ h3 {
             outline: none;
     }
     } 
+
+    #email, #subject, #message {
+        width: 300px;
+    }
 }
+
 @media screen and (min-width: 800px){}

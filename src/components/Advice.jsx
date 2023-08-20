@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import axios from 'axios';
 import Post from './Post';
-
+import '../css/Advice.scss'
 
 const baseUrl = import.meta.env.VITE_WP_API_BASEURL;
 
@@ -46,11 +46,11 @@ const Advice = () => {
         <div className="service-img-1">
         <img src={getFeaturedImage(post)} alt="" id='postimg'/>
         </div>
-        <h4 className="title">{post.title.rendered}</h4>
+        <h4 className="post-title">{post.title.rendered}</h4>
         <ul>
           <li key={post.slug + "-" + index}>
             {/* <a href={`#/post/${post.id}`}>Read More...</a> */}
-            <p dangerouslySetInnerHTML={{__html: post.content.rendered}}></p>
+            <p id='post-text' dangerouslySetInnerHTML={{__html: post.content.rendered}}></p>
           </li>
           </ul>
         </div>

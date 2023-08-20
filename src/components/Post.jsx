@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import '../css/Post.scss'
 
 const baseUrl = import.meta.env.VITE_WP_API_BASEURL;
 
@@ -32,7 +33,7 @@ const Post = () => {
    <div className='container'>
       <h2>Single Post:</h2>
       <div key={post.slug} className="post-container">
-          <h4 className="title">{post.title.rendered}</h4>
+          <h4 id='post-title' className="post-title">{post.title.rendered}</h4>
           <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
           <div>Key: {post.slug}</div>
       </div>

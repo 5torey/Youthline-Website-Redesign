@@ -14,15 +14,18 @@ list-style-type: none !important;
 
 #adviceTitle {
     font-family: $heading;
-    font-size: 40px;
-    color: $black;
+    font-size: 31.5px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .advice-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 197px;
+    align-items: center;
+    // padding: 100px 197px;
     border-bottom: dotted 1px $black;
 }
 
@@ -30,6 +33,7 @@ list-style-type: none !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .advice-card {
@@ -41,8 +45,16 @@ list-style-type: none !important;
     border-radius: 30px !important;
     height: 440px;
     width: 230px;
+
 }
 
 
-@media screen and (max-width: 800px){}
+
+
+@media screen and (max-width: 800px){
+    
+    .advice-sub-container {
+        flex-direction: column;
+    }
+}
 @media screen and (min-width: 800px){}

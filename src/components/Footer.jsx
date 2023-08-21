@@ -34,10 +34,10 @@ const Footer = () => {
         </ul>
         </div>
         <div id='social-links'>
-        <i id='smicon' class="fa-brands fa-facebook fa-xl"></i>
-        <i id='smicon' class="fa-brands fa-twitter fa-xl"></i>
-        <i id='smicon' class="fa-brands fa-youtube fa-xl"></i>
-        <i id='smicon' class="fa-brands fa-instagram fa-xl"></i>
+        <i id='smicon' className="fa-brands fa-facebook fa-xl"></i>
+        <i id='smicon' className="fa-brands fa-twitter fa-xl"></i>
+        <i id='smicon' className="fa-brands fa-youtube fa-xl"></i>
+        <i id='smicon' className="fa-brands fa-instagram fa-xl"></i>
         </div>
       </div>
       <div className="logo-container">

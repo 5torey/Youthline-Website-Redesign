@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSquarePhone, faComments, faMobileScreenButton, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import '../css/Contact.scss'
 
+
+
+
 // Form Endpoint
 const formEndpoint = import.meta.env.VITE_APP_WP_API_FORM_ENDPOINT;
 
@@ -22,8 +25,8 @@ const ContactForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const testForm = new FormData();
-    testForm.append('your-firstname', firstName)
-    testForm.append('your-lastname', lastName)
+    testForm.append('firstName', firstName)
+    testForm.append('lastName', lastName)
     testForm.append('your-subject', subject)
     testForm.append('your-email', email)
     testForm.append('your-message', message)

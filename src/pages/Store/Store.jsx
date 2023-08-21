@@ -96,14 +96,17 @@ const Store = () => {
         <div className="title-container">
         <h3 id='subtitle'>Donate | Koha</h3>
         </div>
+        <div className='prod-container'>
                 {loading ? null : <Products products={donations}/>}
+                </div>
           </div>
                  <div className="merchandise-container">
                   <div className="title-container">
                     <h3 id='subtitle'>Merchandise | Hoko</h3>
                     </div>
-                    
+                    <div className='prod-container'>
                  {loading ? null : <Products products={products}/>}
+                 </div>
                  </div>
                  </>
           }

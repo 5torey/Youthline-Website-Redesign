@@ -47,12 +47,17 @@
 
 .donation-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .merchandise-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.prod-container {
+    display: inline-flex;
+    flex-direction: wrap;
 }
 
 #prodname {
@@ -89,5 +94,12 @@
         text-align: center !important;
     }
 
+    .prod-container {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
-@media screen and (min-width: 800px){}
+@media screen and (min-width: 800px){
+
+}
